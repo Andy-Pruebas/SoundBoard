@@ -22,6 +22,10 @@ class SounViewController: UIViewController {
             let pathComponents = [basePath,"audio.m4a"]
             let audioURL = NSURL.fileURL(withPathComponents: pathComponents)!
             
+            print("**************")
+            print(audioURL)
+            print("**************")
+            
             var settings : [String:AnyObject] = [:]
             settings[AVFormatIDKey] = Int(kAudioFormatMPEG4AAC) as AnyObject?
             settings[AVSampleRateKey] = 44100.0 as AnyObject?
@@ -37,6 +41,13 @@ class SounViewController: UIViewController {
     
 
     @IBAction func recordTapped(_ sender: Any) {
+        if audioRecorder!.isRecording{
+            audioRecorder?.stop()
+            recordButton.setTitle("Record", for: .normal)
+        }else{
+            audioRecorder?.record()
+            recordButton.setTitle("Stop", for: .normal)
+        }
     }
     
     @IBAction func playTapped(_ sender: Any) {
