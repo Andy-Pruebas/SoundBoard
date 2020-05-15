@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLQ-YQ-jLb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLQ-YQ-jLb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -86,7 +86,9 @@
                         <viewLayoutGuide key="safeArea" id="W9B-Ad-lyd"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="w8i-8e-rrM" id="NDc-B3-Utc"/>
                         <outlet property="nameTextField" destination="YYL-Us-gdh" id="UDb-X4-X9U"/>
+                        <outlet property="playButton" destination="km8-zM-EGh" id="pri-93-OyW"/>
                         <outlet property="recordButton" destination="kIE-LY-93U" id="4Pi-Kf-Gty"/>
                     </connections>
                 </viewController>
